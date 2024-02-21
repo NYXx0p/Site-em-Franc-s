@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcação de Cabeleireiro</title>
+    <title>Rendez-vous chez le coiffeur</title>
 </head> 
 <body>
     <header>
@@ -20,10 +20,10 @@
 
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Marcação</a></li>
-                    <li><a href="#">Projeto</a></li>
-                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Commencer</a></li>
+                    <li><a href="#">Marquage</a></li>
+                    <li><a href="#">Projet</a></li>
+                    <li><a href="#">Contact</a></li>
                 
                 </ul>
             </nav>
@@ -40,32 +40,32 @@
     </header>
 
   <form action="processar-marcacao.php" method="post">
-    <label for="nome">Nome do Cliente:</label>
+    <label for="nome">Nom du client:</label>
     <input type="text" id="nome" name="nome" required>
 
-    <label for="sexo">Sexo:</label>
+    <label for="sexo">Sexe:</label>
     <select id="sexo" name="sexo" required>
-      <option value="masculino">Masculino</option>
-      <option value="feminino">Feminino</option>
-      <option value="outros">Outros</option>
+      <option value="masculino">Masculin</option>
+      <option value="feminino">Féminin</option>
+      <option value="outros">Autre</option>
     </select>
 
-    <label for="servico">Tipo de Serviço:</label>
+    <label for="servico">Type de service:</label>
     <select id="servico" name="servico" required>
-      <option value="Corte de cabelo">Corte de cabelo</option>
-      <option value="Pintura">Pintura</option>
-      <option value="Corte de barba">Corte de barba</option>
-      <option value="Tratamento">Tratamento</option>   
-      <option value="Penteados">Penteados</option> 
+      <option value="Corte de cabelo">Coupe de cheveux</option>
+      <option value="Pintura">Peinture</option>
+      <option value="Corte de barba">Coupe de barbe</option>
+      <option value="Tratamento">Traitement</option>   
+      <option value="Penteados">Coiffures</option> 
     </select>
 
-    <label for="data">Data da Marcação:</label>
+    <label for="data">Date de rendez-vous:</label>
     <input type="date" id="data" name="data" required>
 
-    <label for="hora">Hora da Marcação:</label>
+    <label for="hora">Heure de rendez-vous:</label>
     <input type="time" id="hora" name="hora" required>
 
-    <button type="submit">Agendar</button>
+    <button type="submit">Marquer</button>
   </form>
 </body>
 </html>
