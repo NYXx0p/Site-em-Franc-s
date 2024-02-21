@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: beige;
+    height: 600px;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+h2.titulo{
+    color:#0173a1;
+    font-family: "Merriweather", serif;
+    font-size: 34px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*Cebeçario*/
+/*Pading para espaçar a parte de cima*/
+header{
+    height: 100px;
+    padding: 3px;
+    background-color: #0173a1;
+}
+
+/*Espaço do cabeçario*/
+header >.interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Cor das palavras*/
+header a{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    display:inline-block;
+    transition: .2s;
+}
+/*Para dar um tipo de zoom */
+header a:hover{
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    position:static;
+    gap: 200px;
+}
+
+header nav ul li{
+    display: inline-block;
+    cursor: pointer;
+}
+/*Estilo do Butão*/
+header .btn button{
+    width: 100px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 12px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position:relative;
+    cursor: pointer;
+}
+/*Icon do Butão*/
+.btn button .icon{
+    color: #000;
+    font-size: 25px;
+    transition: .2s;
+    padding-right: 5px;
+}
+/*Texto do Butão*/
+.btn button .text{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #000;
+    transform: scale(0);
+    transition: .2s;
+    transition-delay: .1s;
+}
+/*Animação de troca do butão */
+.btn button:hover .text{
+    transform: scale(1);
+}
+
+.btn button:hover .icon{
+    transform: scale(0);
+}
+
+.btn button::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    border-radius: 12px;
+    box-shadow: 0px 0px 8px #ffffff52;
+}
+
+.btn button:hover::before{
+    opacity: 1;
+}
+.btn button span{
+    position: absolute;
+}
+/*Estilo do Butão*/
+
+/*Estilo do projeto*/
+
+.projetos{
+    padding: 40px 4%;
+}
+
+.projetos .flex{
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.img-proj{
+    width: 360px;
+    height: 390px;
+    border-color: #000;
+    background-color: #000;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.img-proj:hover{
+    background-position: 100% 100%;
+    transition: 8s;
+}
