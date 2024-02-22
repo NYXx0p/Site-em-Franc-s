@@ -201,6 +201,7 @@ header .btn button{
 .Servico .servico-box:hover{
     transform: scale(1.05);
     box-shadow: 0 0 12px #00000069;
+    cursor:default;
 }
 
 .Servico .servico-box i{
@@ -239,7 +240,9 @@ header .btn button{
 .sobre .img-sobre img{
     border-radius: 20px;
 }
-
+.sobre a{
+    text-decoration: none;
+}
 .sobre .text-sobre .btn button{
     width: 150px;
     height: 50px;
@@ -254,4 +257,48 @@ header .btn button{
     transition: .2s;
     &:hover{
         transform: scale(1.05);}
+}
+
+/*Estilo do rodapé*/
+footer{
+    padding: 60px 4%;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+footer .line-footer{
+    padding: 20px 0;;
+}
+.borda{
+    border-top: 4px solid #0173a1;
+}
+footer a{
+    text-decoration: none;
+}
+footer .btn button{
+    width: 150px;
+    height: 50px;
+    background-image: linear-gradient(45deg, var(--cor1), var(--cor2));
+    border-radius: 12px;
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    cursor: pointer;
+    margin: 0 15px;;
+    transition: .2s;
+    &:hover{
+        transform: scale(1.05);}
+}
+
+footer .line-footer p i{
+    color: #0173a1;
+    font-size: 22px;
+}
+footer .line-footer p a{
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
 }

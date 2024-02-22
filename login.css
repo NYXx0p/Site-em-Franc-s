@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-image: url(images/tela-login.png);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+/*Cebeçario*/
+/*Pading para espaçar a parte de cima*/
+header{
+    height: 100px;
+    padding: 3px;
+    background-color: #0173a1;
+}
+
+/*Espaço do cabeçario*/
+header >.interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Cor das palavras*/
+header a{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    display:inline-block;
+    transition: .2s;
+}
+/*Para dar um tipo de zoom */
+header a:hover{
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    position:static;
+    gap: 200px;
+}
+
+header nav ul li{
+    display: inline-block;
+    cursor: pointer;
+}
+/*Estilo do Butão*/
+header .btn button{
+    width: 100px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 12px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position:relative;
+    cursor: pointer;
+}
+/*Icon do Butão*/
+.btn button .icon{
+    color: #000;
+    font-size: 25px;
+    transition: .2s;
+    padding-right: 5px;
+}
+/*Texto do Butão*/
+.btn button .text{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #000;
+    transform: scale(0);
+    transition: .2s;
+    transition-delay: .1s;
+}
+/*Animação de troca do butão */
+.btn button:hover .text{
+    transform: scale(1);
+}
+
+.btn button:hover .icon{
+    transform: scale(0);
+}
+
+.btn button::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    border-radius: 12px;
+    box-shadow: 0px 0px 8px #ffffff52;
+}
+
+.btn button:hover::before{
+    opacity: 1;
+}
+.btn button span{
+    position: absolute;
+}
+/*Estilo do Butão*/
+
+.box-login{
+    margin-top: 40px;
+    width: 400px;
+    height: 400px;
+    background-color: #9b9b9b77;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 20px;
+}
+.box-img{
+    display: flex;
+    align-items: center;
+}
+.box-img .icon{
+    color: #464545;
+    background-position: center;
+    background-size: cover;
+    font-size: 100px;
+    margin-right: 100px;
+}
+
+.box-login label{
+    display: block;
+    margin-left: 10px;
+}
+.box-login input[type="text"], input[type="password"]{
+    padding-left: 5px;
+    width: 90%;
+    line-height: 35px;
+    border: none;
+    margin-left: 10px;
+}
+.box-login input[type="text"]{
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.box-login a{
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.box-login input[type="checkbox"]{
+    margin-left: 10px;
+}
+.box-login input[type="submit"]{
+    display: block;
+    width: 80%;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color:#0173a1;
+    border-radius: 10px;
+    border: 0;
+    margin-top: 12px;
+    cursor: pointer;
+    margin-left: 25px;
+}
+.box-login input[type="submit"]:hover{
+    box-shadow: 0px 0px 8px #ffffff52;
+    transform: scale(1.05);
+}

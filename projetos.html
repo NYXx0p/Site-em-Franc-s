@@ -10,23 +10,23 @@
 <header>
     <div class="interface">
         <div class="logo">
-            <a href="#">
+            <a href="newSite.html">
                 <img src="images/logo-lycee-jules-le-Cesne (1) (1) (1).png" alt="">
             </a>
         </div><!--logo-->
 
         <nav class="menu-desktop">
             <ul>
-                <li><a href="newSite.html">Inicio</a></li>
-                <li><a href="#">Marcação</a></li>
-                <li><a href="projetos.html">Projeto</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="newSite.html">Commencer</a></li>
+                <li><a href="marcacao.html">Marquage</a></li>
+                <li><a href="projetos.html">Projet</a></li>
+                <li><a href="contactos.html">Contact</a></li>
             
             </ul>
         </nav>
 
         <div class="btn">
-            <a href="#">
+            <a href="login.html">
                 <button>
                     <span class="icon"><i class="bi bi-person-circle"></i></span>
                     <span class="text">Login</span>
@@ -37,17 +37,68 @@
     </div><!--interface-->
 </header>
 <body>
-    <main>
-        <section class="projetos">
+    <div>
+        <div class="projetos">
             <div class="interface">
-                <h2 class="titulo"> Projetos </h2>
+                <h2 class="titulo">Projets</h2>
                 <div class="flex">
                     <div class="img-proj" style="background-image: url(fotos/cabelohomem1.png);"></div><!--img-port-->
                     <div class="img-proj"style="background-image: url(fotos/cabelomulher1.png);"></div><!--img-port-->
                     <div class="img-proj" style="background-image: url(fotos/barba1.png);"></div><!--img-port-->
                 </div><!--flex-->
             </div><!--interface-->
+                <div class="videos"></div>
+                    <video width="400" height="400" controls>
+                        <source src="videos/cabelo.mp4" type = "video/mp4">                                
+                        Le navigateur ne prend en charge aucune des vidéos disponibles !
+                    </video>
+                    <video width="400" height="400" controls>
+                        <source src="videos/mulher.mp4" type = "video/mp4">                                
+                        Le navigateur ne prend en charge aucune des vidéos disponibles !
+                    </video>
+                    <video width="400" height="400" controls>
+                        <source src="videos/barba.mp4" type = "video/mp4">                                
+                        Le navigateur ne prend en charge aucune des vidéos disponibles !
+                    </video>
+                </div><!--videos-->
         </section><!--projetos-->
     </main>
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="images/logo-lycee-jules-le-Cesne (1) (1) (1).png" alt="">
+                    </div><!--logo-footer-->
+                        <div class="btn">
+                            <a href="https://www.lyceejuleslecesne.fr/en/">
+                                <button style="--cor1: #777777; --cor2:#185df2;">
+                                    <span class="icon"><i class="bi bi-globe"></i></span>
+                                    <span class="text">Site</span>
+                                </button>
+                            </a>
+                            <a href="https://www.facebook.com/LyceeDesMetiersJulesLeCesne">
+                                <button style="--cor1: #09C5FF; --cor2: #1877F2;">
+                                    <span class="icon"><i class="bi bi-facebook"></i></span>
+                                    <span class="text">Facebook</span>
+                                </button>
+                            </a>
+                            <a href="https://www.instagram.com/lyceejuleslecesne/">
+                                <button style="--cor1: #fb3997; --cor2: #fecf12;">
+                                    <span class="icon"><i class="bi bi-instagram"></i></span>
+                                    <span class="text">Instagram</span>
+                                </button>
+                            </a>
+                        </div><!--btn-->
+                </div><!--flex-->
+            </div><!--line-footer-->
+
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope-fill"></i> <a
+                        href="mailto:ufa-le-cesne@ac-normandie.fr">ufa-le-cesne@ac-normandie.fr</a></p>
+            </div><!--line-footer-->
+        </div><!--interface-->
+    </footer>
+
 </body>
 </html>
